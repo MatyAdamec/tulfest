@@ -3,7 +3,9 @@
 :root {
     --main-color: #5948AD;
     --hover-overlay: #2525252a;
-    --text-color: #ffffff;
+    --text-color: #000000;
+    --text-color2: #ffffff;
+    --background-color: #ffffff;
 }
 
 
@@ -16,5 +18,6 @@
 html,body{
     font-family: 'Roboto', sans-serif;
     margin: 0;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--background-color);
+    color: var(--text-color);
 }

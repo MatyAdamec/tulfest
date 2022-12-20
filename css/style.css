@@ -16,8 +16,6 @@ h2{
 }
 .page__nav{
     display: flex;
-    /*background-color: #7c6ec0;*/
-    background-color: white;
     box-shadow: 0px 1px 3px black;
     position: relative;
     height: 60px;
@@ -61,7 +59,7 @@ h2{
     margin: 0;
     list-style: none;
     position: absolute;
-    background-color: white;
+    background-color: var(--background-color);
     width: 100%;
     display: none;
 }
@@ -69,7 +67,7 @@ h2{
     padding: .5em 0 .5em 0;
     display: block;
     text-decoration: none;
-    color: black;
+    color: var(--text-color);
     font-weight: 550;
     list-style: none;
     width: 100%;
@@ -175,8 +173,8 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
     background-position: center;
     background-size: cover;
 }
-.page__students_header,.page__students_p,.page__students_cta{
-    color: white;
+.page__students_header,.page__students_p{
+    color: var(--text-color2);
 }
 .page__students_text{
     text-align: left;
@@ -198,7 +196,7 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
 }
 .page__program_s{
     font-size: 1.2em;
-    color: black;
+    color: var(--text-color);
     display: block;
 }
 .page__program_map{
@@ -214,7 +212,7 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
     align-items: center;
     width: 100%;
     background-position: center;
-    color: white;
+    color: var(--text-color2);
     background-size: cover;
     height: 8em;
     margin-bottom: .5em;
@@ -223,6 +221,11 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
 .page__band_header{
     background-image: url(../img/band.png);
 }
+.page__teams_header{
+    background-image: url(../img/spolky.png);
+}
+
+
 .page__band_dates{
     text-align: center;
 }
@@ -236,14 +239,11 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
 .page__band_date_S{
     font-size: .8em;
     display: block;
-    color: black;
+    color: var(--text-color);
 }
 
 
 
-.page__teams_header{
-    background-image: url(../img/spolky.png);
-}
 .page__teams_container,.page__pyears_container{
     display: flex;
     gap: 1em;
@@ -288,7 +288,7 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
     font-weight: 900;
     font-size: .8em;
     display: block;
-    color: black;
+    color: var(--text-color);
 }
 .page__news_p{
     margin: 0;
@@ -323,7 +323,7 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
     align-items: center;
     flex-direction: column;
     width: 100%;
-    color: white;
+    color: var(--text-color2);
     background-size: cover;
     height: 12em;
     text-align: center;
@@ -373,8 +373,7 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
 
 
 
-
-.page__pyears_cta,.page__news_cta,.page__teams_cta,.page__tulfest_cta{
+.page__cta{
     margin: 1em auto 0 auto;
     display: block;
     text-align: center;
@@ -387,29 +386,17 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
     color: var(--main-color);
     background-repeat: no-repeat;
 }
-.page__students_cta,.page__tul_cta{
-    text-decoration: none;
-    padding:  .5em 2em .5em 1em;
-    border: #ffffff 1px solid;
+.page__cta--white{
+    border: var(--text-color2) 1px solid;
     background-image: url(../img/arrow_white.png);
-    background-position:  calc(100% - 15px) 50% ;
-    background-repeat: no-repeat;
+    color: var(--text-color2);
 }
-
-
-
-.page__students_cta:hover,.page__tul_cta:hover,
-.page__links_cta:hover,.page__date_cta:hover,
-.page__pyears_cta:hover,.page__news_cta:hover,
-.page__tul_cta:hover,.page__teams_cta:hover,.page__tulfest_cta:hover{
+.page__cta:hover,.page__share:hover{
     background-color: var(--hover-overlay);
-
 }
-.page__tul_cta{
-    color: white;
-}   
 
-.page__links_cta,.page__date_cta{
+
+.page__share{
     text-decoration: none;
     padding:   1em;
     width: fit-content;
@@ -419,11 +406,11 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
     background-repeat: no-repeat;
     display: block;
 }
-.page__links_cta--facebook,.page__date_cta--facebook{
+.page__share--facebook{
     background-image: url(../img/facebook_icon.png);
     background-size: 1.5em;
 }
-.page__links_cta--calendar,.page__date_cta--calendar{
+.page__share--calendar{
     background-image: url(../img/google_calendar_icon.png);
     background-size: 2em;
 }
