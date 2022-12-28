@@ -1,10 +1,166 @@
+/*
+for 360px
+@media (min-width: 576px) {
+@media (min-width: 768px) {
+@media (min-width: 992px) {
+@media (min-width: 1200px) {
+*/
+
 @media (min-width: 576px) {
 
-    .page__links{
+    .page__tul{
+        height: 16em;
+    }
+
+    .page__news_text{
+        width: 255px;
+    }
+    .page__news_p{
+        -webkit-line-clamp: 4;
+    }
+
+    .page__pyears_video{
+        width: calc(100% - 2em);
+        padding: 1em;
+    }
+
+
+    .page__band_container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         justify-items: center;
+        align-items: center;
+    }
+    .page__band_text{
+        display: block;
+        max-width: 360px;
+    }
+    .page__band_text,.page__band_dates{
+        padding: 2em;
+    }
+    .page__band_dates{
+        text-align: left;
+        width: fit-content;
+
+        display: flex;
+        flex-direction: column;
+    }
+    .page__band_date{
+        margin: .5em 0 .5em 0 ;
+    }
+
+
+    .page__program_container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .page__program_map{
+        padding:0 1em 0 1em;
+        width: calc(100% - 2em);
+    }
+
+
+    .show{
+        display: block;
+    }
+    .page__share{
+        padding:   .7em 3em .7em 3em ;
+        background-position: 8% , 92%;
+    }
+
+    .page__share--facebook{
+        background-image: url(../img/facebook_icon.png) , url(../img/arrow_purple.png);
+        background-size: 1.5em , .5em;
+        padding:   .7em 4.5em .7em 3em ;
+    }
+    .page__share--calendar{
+        background-image: url(../img/google_calendar_icon.png), url(../img/arrow_purple.png);
+        background-size: 2em , .5em;
+        background-position: 6% , 92%;
+    }
+
+    .page__links_icons .show{
+        display: none;
+    }
+    .page__links_icons .page__share--facebook{
+        background-image: url(../img/facebook_icon.png);
+        background-size: 1.5em;
+        padding: 1em;
+        background-position: center;
+    }
+    .page__links_icons .page__share--calendar{
+        background-image: url(../img/google_calendar_icon.png);
+        background-size: 2em;
+        padding: 1em;
+        background-position: center;
+    }
+
+
+    .page__date_text{
+        padding: 0 1em 0 1em ;
+    }
+}
+@media (min-width: 768px){
+    .page__nav_img_cont{
+        position: absolute;
+        left: .5em;
+
+    }
+    .page__nav{
+        display: flex;
+        justify-content: end;
+    }
+    .page__menu_toggle{
+        display: none;
+    }
+    .page__menu,
+    .page__menu::before,
+    .page__menu::after{
+        display: none;
+    }
+    .page__nav_container{
+        display: block;
+    }
+    .page__nav_container{
+        float: right;
+        width: fit-content;
+        position: unset;
+        height: 100%;
+        display: block;
+        display: flex;
+    }
+    .page__nav_item{
+        width: fit-content;
+        padding-right: 1.5em;
+        border: none;
+        display: flex;
+        align-self: center;
     }
 
 
 
-
 }
+
+    /*
+    .page__links_icons .page__share{
+        padding:   .7em 3em .7em 3em ;
+        background-position: 8% , 92%;
+    }
+    .page__links_icons .show{
+        display: block;
+    }
+    .page__links_icons .page__share--facebook{
+        background-image: url(../img/facebook_icon.png) , url(../img/arrow_purple.png);
+        background-size: 1.5em , .5em;
+        padding:   .7em 4.5em .7em 3em ;
+    }
+    .page__links_icons .page__share--calendar{
+        background-image: url(../img/google_calendar_icon.png), url(../img/arrow_purple.png);
+        background-size: 2em , .5em;
+        background-position: 6% , 92%;
+    }
+
+    .page__links_icons{
+        flex-wrap: wrap;
+    }*/

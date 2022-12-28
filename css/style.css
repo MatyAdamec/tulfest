@@ -7,6 +7,7 @@ section,footer{
 h2{
     font-size: 1.5em;
 }
+
 .page__nav_img_cont{
     height: 80%;
     margin-left: 10px;
@@ -108,7 +109,7 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
     height: 20em;
 }
 .page__hero_text{
-    color: var(--text-color);
+    color: var(--text-color2);
     padding: 0 1em 0 1em;
 }
 .page__hero_img{
@@ -150,9 +151,6 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
     color: var(--main-color);
 }
 
-.show{
-    display: none;
-}
 .page__date_container{
     display: flex;
     gap: 1em;
@@ -179,7 +177,9 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
 .page__students_text{
     text-align: left;
 }
-
+.page__students_img{
+    display: none;
+}
 
 
 
@@ -270,7 +270,9 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
 
 
 
-
+.page__news_text .page__cta{
+    width: 100px;
+}
 .page__news_container{
     display: flex;
     flex-wrap: wrap;
@@ -349,6 +351,7 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
     margin-bottom: .5em;
 }
 .page__links{
+    justify-items: center;
     padding: 1em .5em 1em .5em;
     display: grid;
     gap: .5em;
@@ -395,7 +398,9 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
     background-color: var(--hover-overlay);
 }
 
-
+.show{
+    display: none;
+}
 .page__share{
     text-decoration: none;
     padding:   1em;
