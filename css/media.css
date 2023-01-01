@@ -105,7 +105,6 @@ for 360px
     .page__nav_img_cont{
         position: absolute;
         left: .5em;
-
     }
     .page__nav{
         display: flex;
@@ -121,6 +120,7 @@ for 360px
     }
     .page__nav_container{
         display: block;
+        margin-right: 1em;
     }
     .page__nav_container{
         float: right;
@@ -130,19 +130,25 @@ for 360px
         display: block;
         display: flex;
     }
+    .page__nav_link{
+        padding-right: .75em;
+        padding-left: .75em;
+    }
     .page__nav_item{
         width: fit-content;
-        padding-right: 1.5em;
         border: none;
         display: flex;
         align-self: center;
     }
-
+    .page__pyears_p{
+        max-width: 850px;
+        text-align: center;
+        margin: 0 auto;
+    }
 
 
 }
-
-    /*
+@media (min-width: 992px) {
     .page__links_icons .page__share{
         padding:   .7em 3em .7em 3em ;
         background-position: 8% , 92%;
@@ -153,14 +159,107 @@ for 360px
     .page__links_icons .page__share--facebook{
         background-image: url(../img/facebook_icon.png) , url(../img/arrow_purple.png);
         background-size: 1.5em , .5em;
-        padding:   .7em 4.5em .7em 3em ;
+        padding:   .7em 4.35em .7em 3em ;
     }
     .page__links_icons .page__share--calendar{
         background-image: url(../img/google_calendar_icon.png), url(../img/arrow_purple.png);
         background-size: 2em , .5em;
         background-position: 6% , 92%;
     }
-
     .page__links_icons{
         flex-wrap: wrap;
-    }*/
+        align-content: center;
+        grid-column: 3;
+    }   
+    .page__links_text{
+        grid-row: 1;
+    }
+    .page__links{
+        grid-template-columns: repeat(3 , 1fr);
+        height: 12em;
+    }
+    .page__pyears_video{
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-self: center;
+    }
+
+    
+    .page__news_header , .page__pyears_header,
+    .page__teams_header , .page__band_header,
+    .page__hero_text   {
+        font-size: 2.5em;
+    }
+
+    .page__tulfest .page__cta, .page__students .page__cta{
+        margin: 1em 0 0 0;
+    }
+    .page__tulfest_header, .page__students_header{
+        font-size: 2em;
+        text-align:left;
+    }
+    .page__tulfest_p, .page__students_p{
+        margin: 16px 0 0 0;
+    }
+    .page__tulfest_img , .page__students_img{
+        display: block;
+        width: 100%;
+        max-width: 600px;
+    }
+    .page__tulfest, .page__students{
+        justify-items: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .page__tulfest_text, .page__students_text{
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-self: center;
+    }
+    .page__hero_img{
+        height: 12em;
+    }
+
+}
+@media (min-width: 1200px) {
+    .page__nav_img_cont{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .page__teams_container, .page__pyears_container{
+        width: 100%;
+        display: grid;
+        max-width: 1200px;
+        margin: 5em auto 0 auto;
+        grid-template-columns: repeat(3, 1fr);
+        overflow-x: hidden;
+    }
+    .page__teams_item,.page__pyears_item{
+        width: 100%;
+    }
+    .page__links{
+        grid-template-columns: repeat(4, 1fr);
+        height: fit-content;
+    }
+    .page__links_img{
+        display: block;
+        margin-top: 1em;
+        width: 50%;
+        transform: rotate(25deg);
+    }
+    .page__links_icons{
+        grid-column: 4;
+    }
+    .page__partners_container{
+        gap: 4em;
+    }
+    .page__news_container{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}

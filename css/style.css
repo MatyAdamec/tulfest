@@ -121,6 +121,13 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
     text-align: center;
     padding: 1em;
 }
+.page__tulfest_p{
+    margin: 16px auto;
+    max-width: 530px;
+}
+.page__tulfest_img{
+    display: none;
+}
 .page__tulfest_header{
     text-align: center;
     color: var(--main-color);
@@ -174,6 +181,9 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
 .page__students_header,.page__students_p{
     color: var(--text-color2);
 }
+.page__students_p{
+    max-width: 600px;
+}
 .page__students_text{
     text-align: left;
 }
@@ -202,6 +212,11 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
 .page__program_map{
     border: 0;
     width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-self: center;
 }
 
 
@@ -259,6 +274,7 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
     font-size: 1.5em;
 }
 .page__pyears_p{
+    text-align: center;
     padding: 0 1em 0 1em;
 }
 .page__pyears_video{
@@ -303,7 +319,9 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
 
 
 
-
+.page__partners{
+    margin: 5em 0 5em 0;
+}
 .page__partners_header{
     text-align: center;
     color: var(--main-color);
@@ -372,7 +390,9 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
     gap: 1em;
     flex-direction: row;
 }
-
+.page__links_img{
+    display: none;
+}
 
 
 
