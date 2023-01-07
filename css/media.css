@@ -95,11 +95,37 @@ for 360px
         padding: 1em;
         background-position: center;
     }
-
-
     .page__date_text{
         padding: 0 1em 0 1em ;
     }
+
+
+
+    p{
+        font-size: 1.2em;
+    }
+    .page__date_date{
+        font-size: 5em;
+    }
+    .page__band_p{
+        font-size: 1em;
+    }
+    .page__band_date{
+        font-size: 1.8em;
+    }
+    .page__tul_s{
+        font-size: 1.5em;
+    }
+    .page__tul_header{
+        font-size: 1.2em;
+    }
+    .page__pyears_header,.page__news_header,
+    .page__news_h,.page__partners_header,
+    .page__band_header, .page__teams_header{
+        font-size: 2em;
+    }
+    
+
 }
 @media (min-width: 768px){
     .page__nav_img_cont{
@@ -146,7 +172,27 @@ for 360px
         margin: 0 auto;
     }
 
+    .page__hero{
+        height: 26em;
+    }
+    .page__hero_img{
+        height: 16em;
+    }   
+    .page__tul{
+        height: 20em;
+    }
+    .page__partners{
+        margin: 6em 0 6em 0;
+    }
 
+    .page__band_p{
+        font-size: 1.2em;
+        
+    }
+    .page__band_text{
+        max-width: 500px;
+        
+    }
 }
 @media (min-width: 992px) {
     .page__links_icons .page__share{
@@ -184,6 +230,10 @@ for 360px
         display: flex;
         justify-self: center;
     }
+    .page__tulfest_p{
+        max-width: 600px;
+    }
+
 
     
     .page__news_header , .page__pyears_header,
@@ -219,10 +269,10 @@ for 360px
         justify-items: center;
         align-self: center;
     }
-    .page__hero_img{
-        height: 12em;
-    }
 
+
+
+    
 }
 @media (min-width: 1200px) {
     .page__nav_img_cont{
@@ -262,4 +312,22 @@ for 360px
         max-width: 1200px;
         margin: 0 auto;
     }
+
+/*
+    .page__hero{
+        height: 32em;
+    }
+    .page__hero_img{
+        height: 20em;
+    }
+    .page__tulfest_img , .page__students_img{
+        max-width: 750px;
+    }
+    .page__band_header,.page__teams_header{
+        height: 5em;
+        font-size: 4.5em;
+    }
+    .page__date_date{
+        font-size: 12em;
+    }*/
 }

@@ -1,11 +1,11 @@
-section,footer{
-    margin-top: 2em;
+html{
+    scroll-behavior: smooth;
+}
+.page{
+    margin-top: 60px;
 }
 .uppercase{
     text-transform:uppercase;
-}
-h2{
-    font-size: 1.5em;
 }
 
 .page__nav_img_cont{
@@ -18,7 +18,10 @@ h2{
 .page__nav{
     display: flex;
     box-shadow: 0px 1px 3px black;
-    position: relative;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: var(--background-color);
     height: 60px;
     align-items: center;
 }
@@ -122,8 +125,9 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
     padding: 1em;
 }
 .page__tulfest_p{
+    max-width: 650px;
     margin: 16px auto;
-    max-width: 530px;
+
 }
 .page__tulfest_img{
     display: none;
@@ -141,16 +145,10 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
 }
 
 
-
-
-.page__date_header{
-    margin: 2em 0 0 0;
-}
 .page__date{
     text-align: center;
 }
 .page__date_date{
-    font-size: 4em;
     color: var(--main-color);
     margin: 0;
 }
@@ -205,7 +203,6 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
     text-align: center;
 }
 .page__program_s{
-    font-size: 1.2em;
     color: var(--text-color);
     display: block;
 }
@@ -230,7 +227,6 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
     color: var(--text-color2);
     background-size: cover;
     height: 8em;
-    margin-bottom: .5em;
 }
 
 .page__band_header{
@@ -248,11 +244,9 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
     display: none;
 }
 .page__band_date{
-    font-size: 1.5em;
     color: var(--main-color);
 }
 .page__band_date_S{
-    font-size: .8em;
     display: block;
     color: var(--text-color);
 }
@@ -271,7 +265,6 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
 .page__pyears_header,.page__news_header{
     text-align: center;
     color: var(--main-color);
-    font-size: 1.5em;
 }
 .page__pyears_p{
     text-align: center;
@@ -299,12 +292,10 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
     margin: 0 auto;
 }
 .page__news_h{
-    font-size: 1.5em;
     color: var(--main-color);
 }
 .page__news_s{
     font-weight: 900;
-    font-size: .8em;
     display: block;
     color: var(--text-color);
 }
@@ -318,14 +309,9 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
 }
 
 
-
-.page__partners{
-    margin: 5em 0 5em 0;
-}
 .page__partners_header{
     text-align: center;
     color: var(--main-color);
-    font-size: 1.5em;
 }
 .page__partners_container{
     display: flex;
@@ -347,16 +333,13 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
     background-size: cover;
     height: 12em;
     text-align: center;
-    margin-bottom: .5em;
     background-image: url(../img/2021-10-4\ -\ TULFest.png);
 }
 .page__tul_header{
     width: 100%;
-    font-size: .8em;
 }
 .page__tul_s{
     display: block;
-    font-size: 1.5em;
 }
 
 
@@ -364,10 +347,7 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
     padding: 0;
     margin: 0;
 }
-.page__links_header{
-    font-size: 1.5em;
-    margin-bottom: .5em;
-}
+
 .page__links{
     justify-items: center;
     padding: 1em .5em 1em .5em;
@@ -379,7 +359,9 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
     display: block;
     height: fit-content;
 }
-
+.page__links_header{
+    margin-bottom: .5em;
+}
 .page__links_text{
     grid-row: span 2;
 }
@@ -395,9 +377,9 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
 }
 
 
-
 .page__cta{
     margin: 1em auto 0 auto;
+
     display: block;
     text-align: center;
     width: fit-content;
@@ -438,4 +420,56 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
 .page__share--calendar{
     background-image: url(../img/google_calendar_icon.png);
     background-size: 2em;
+}
+
+
+.page__date_date{
+    font-size: 4em;
+}
+.page__program_s{
+    font-size: 1.2em;
+}
+.page__band_date_S{
+    font-size: .8em;
+}
+.page__news_s{
+    font-size: .8em;
+}
+
+.page__band_date{
+    font-size: 1.5em;
+}
+.page__tul_s{
+    font-size: 1.5em;
+}
+
+.page__tul_header{
+    font-size: .8em;
+}
+
+.page__pyears_header,.page__news_header,
+.page__news_h,.page__partners_header,
+.page__links_header,
+.page__band_header, .page__teams_header{
+    font-size: 1.5em;
+}
+
+
+/*
+.page__band_header,.page__teams_header{
+    margin-bottom: .5em;
+}
+*/
+/*
+.page__partners{
+    margin: 5em 0 5em 0;
+}
+*/
+/*
+.page__tul{
+    margin-bottom: .5em;
+}*/
+
+section,footer,.page__partners, .page__links{
+    margin: 4em 0 0 0;
 }
