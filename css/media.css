@@ -68,7 +68,7 @@ for 360px
         padding:   .7em 3em .7em 3em ;
         background-position: 8% , 92%;
     }
-
+    
     .page__share--facebook{
         background-image: url(../img/facebook_icon.png) , url(../img/arrow_purple.png);
         background-size: 1.5em , .5em;
@@ -79,7 +79,18 @@ for 360px
         background-size: 2em , .5em;
         background-position: 6% , 92%;
     }
+    .page__nav_fa{
+        background-image: url(../img/facebook_icon.png);
+        padding: 1em;
+        background-position: 50% ;
 
+        margin-left: 10px;
+        position:unset;
+        float: right;
+    }
+    .page__nav_fa .show{
+        display: none;
+    }
     .page__links_icons .show{
         display: none;
     }
@@ -128,12 +139,15 @@ for 360px
 
 }
 @media (min-width: 768px){
+    .page{
+        margin-top: 100px;
+    }
     .page__nav_img_cont{
         position: absolute;
-        left: .5em;
+        left:3em;
     }
     .page__nav{
-        height: 80px;
+        height: 100px;
         display: flex;
         justify-content: end;
     }
@@ -158,6 +172,7 @@ for 360px
         display: flex;
     }
     .page__nav_link{
+        font-size: 1.2em;
         padding-right: .75em;
         padding-left: .75em;
     }
@@ -173,10 +188,10 @@ for 360px
         margin: 0 auto;
     }
     .page__hero_vid, .page__hero,.page__hero_overlay{
-        height: 26em;
+        height: 50em;
     }
     .page__hero_img{
-        height: 16em;
+        height: 25em;
     }   
     .page__tul{
         height: 20em;
@@ -280,7 +295,18 @@ for 360px
         left: 50%;
         transform: translate(-50%);
     }
+    .page__nav_fa{
+        background-image: url(../img/facebook_icon.png), url(../img/arrow_blue.png);
+        background-size: 1.5em , .5em;
+        padding:   .7em 4.5em .7em 3em ;
+        background-position: 8% , 92%;
+        position:absolute;
+        margin: 0;
 
+    }
+    .page__nav_fa .show{
+        display: block;
+    }
     .page__teams_container, .page__pyears_container{
         width: 100%;
         display: grid;

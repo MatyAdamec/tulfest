@@ -2,16 +2,25 @@ html{
     scroll-behavior: smooth;
 }
 .page{
-    margin-top: 80px;
+    margin-top: 60px;
 }
 .uppercase{
     text-transform:uppercase;
 }
+#start,#spolky{
+    scroll-margin-top: 100px;
+}
+#program,#aktuality,#procniky{
+    scroll-margin-top: 150px;
+}
 
 .page__nav_img_cont{
     height: 80%;
-    margin-left: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
 }
+
 .page__nav_img{
     height: 100%;
 }
@@ -109,12 +118,12 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
     width: 100%;
     background-position: center;
     background-size: cover;
-    height: 20em;
+    height: 30em;
 }
 .page__hero_overlay{
     background-color: var(--main-overlay);
     z-index: 1;
-    height: 20em;
+    height: 30em;
     width: 100%;
     position: absolute;
 }
@@ -124,12 +133,12 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
     z-index: 2;
 }
 .page__hero_img{
-    height: 10em;
+    height: 15em;
     z-index: 2;
 }
 .page__hero_vid{
     position: absolute;
-    height: 20em;
+    height: 30em;
     width: 100%;
     z-index: 0;
     transform-origin: center;
@@ -437,7 +446,12 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
     background-image: url(../img/google_calendar_icon.png);
     background-size: 2em;
 }
-
+.page__nav_fa{
+    position: absolute;
+    left: 10px;
+    color: #1778F2;
+    border: #1778F2 1px solid;
+}
 
 .page__date_date{
     font-size: 4em;
