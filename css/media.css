@@ -133,6 +133,7 @@ for 360px
         left: .5em;
     }
     .page__nav{
+        height: 80px;
         display: flex;
         justify-content: end;
     }
@@ -171,8 +172,7 @@ for 360px
         text-align: center;
         margin: 0 auto;
     }
-
-    .page__hero{
+    .page__hero_vid, .page__hero,.page__hero_overlay{
         height: 26em;
     }
     .page__hero_img{

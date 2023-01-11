@@ -2,7 +2,7 @@ html{
     scroll-behavior: smooth;
 }
 .page{
-    margin-top: 60px;
+    margin-top: 80px;
 }
 .uppercase{
     text-transform:uppercase;
@@ -16,6 +16,7 @@ html{
     height: 100%;
 }
 .page__nav{
+    z-index: 999;
     display: flex;
     box-shadow: 0px 1px 3px black;
     position: fixed;
@@ -105,20 +106,35 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    background-image: url(../img/hero.png);
     width: 100%;
     background-position: center;
     background-size: cover;
     height: 20em;
 }
+.page__hero_overlay{
+    background-color: var(--main-overlay);
+    z-index: 1;
+    height: 20em;
+    width: 100%;
+    position: absolute;
+}
 .page__hero_text{
     color: var(--text-color2);
     padding: 0 1em 0 1em;
+    z-index: 2;
 }
 .page__hero_img{
     height: 10em;
+    z-index: 2;
 }
-
+.page__hero_vid{
+    position: absolute;
+    height: 20em;
+    width: 100%;
+    z-index: 0;
+    transform-origin: center;
+    object-fit: cover;
+}
 
 .page__tulfest{
     text-align: center;
