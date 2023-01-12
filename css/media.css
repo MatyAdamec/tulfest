@@ -270,7 +270,7 @@ for 360px
     .page__tulfest_img , .page__students_img{
         display: block;
         width: 100%;
-        max-width: 600px;
+        max-width: 700px;
     }
     .page__tulfest, .page__students{
         justify-items: center;
@@ -356,4 +356,19 @@ for 360px
     .page__date_date{
         font-size: 12em;
     }*/
+}
+
+@media (min-width: 1500px) {
+    .page__nav_link{
+        font-size: 1.5em;
+    }
+    .page__date_header{
+        font-size: 4em;
+    }
+    .page__date_date{
+        font-size: 12em;
+    }
+    .page__date_text{
+        font-size: 2em;
+    }
 }

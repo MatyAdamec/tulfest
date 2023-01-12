@@ -500,6 +500,12 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
     margin-bottom: .5em;
 }*/
 
-section,footer,.page__partners, .page__links{
-    margin: 4em 0 0 0;
+section,footer,.page__partners{
+    margin: 6em 0 0 0;
+}
+.page__links{
+    margin: 3em 0 0 0;
+}
+.page__date{
+    margin: 10em 0 10em 0;
 }
